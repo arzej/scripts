@@ -112,7 +112,7 @@ if [ $convert == true ]; then
         for a in *.$extension; do
             f="${a[@]/%$extension/m4a}"
             avconv -y -i "$a" embeded_cover.jpg 2>&1 > /dev/null
-            avconv -y -i "$a" -c:a libfdk_aac -vbr 1 -profile:a aac_he -ar 16k -vn -cutoff 16k "$f" 2>&1 > /dev/null
+            avconv -y -i "$a" -c:a libfdk_aac -vbr 1 -profile:a aac_he -ar 32k -vn -cutoff 16k "$f" 2>&1 > /dev/null
         done
     fi
 fi
