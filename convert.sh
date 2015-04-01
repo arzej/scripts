@@ -219,7 +219,7 @@ echo "Adding cover"
 mp4art --add "$cover_file" /dev/shm/album_chap.mp4 > /dev/null
 
 if [ -z "$file_name" ]; then
-    file_name="$artist - $album.m4a"
+    file_name="$artist - $album.m4b"
 fi
 
 echo Renaming to "$file_name".
